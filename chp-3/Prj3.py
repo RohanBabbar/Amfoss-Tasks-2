@@ -7,13 +7,9 @@ def collatz(number):
         return 3*number+1
 print("Enter an integer")
 a=int(input())
-c=0
-while True:
-    if c==0:
+x=collatz(a)
+while (x!=1):
         g= collatz(a)
-    c=c+1
-    if c>0:
-        g= collatz(a)
-    if g==1:
-        break        
+        break
+            
     
